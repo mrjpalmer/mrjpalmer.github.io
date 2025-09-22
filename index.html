@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wegener's Evidence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #E0F2FE;
+        }
+
+        .page-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 2rem auto;
+        }
+
+        .highlighted {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        /* By default, all topic pages are hidden */
+        #topic-pages {
+            display: none;
+        }
+
+        #topic-pages>div {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-blue-100 min-h-screen">
+    <!-- Main Home Page -->
+    <div id="home-page" class="w-full h-full p-4 md:p-8">
+        <div class="page-content">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-center text-blue-900 mb-6 md:mb-10">
+                Wegener's Evidence for Continental Drift
+            </h1>
+            <p class="text-center text-lg text-gray-700 mb-8">
+                Welcome to your information packet. Please select your assigned topic below to learn more.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="#" onclick="showTopic('fit-of-continents')"
+                    class="topic-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-2 border-blue-200">
+                    <h2 class="text-2xl font-bold text-blue-800 mb-2">Fit of Continents</h2>
+                    <p class="text-gray-600">Explore how the continents seem to fit together like a puzzle.</p>
+                </a>
+                <a href="#" onclick="showTopic('animal-fossils')"
+                    class="topic-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-2 border-blue-200">
+                    <h2 class="text-2xl font-bold text-blue-800 mb-2">Animal Fossils</h2>
+                    <p class="text-gray-600">Discover how the discovery of similar fossils across continents supports the theory of continental drift.</p>
+                </a>
+                <a href="#" onclick="showTopic('plant-fossils')"
+                    class="topic-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-2 border-blue-200">
+                    <h2 class="text-2xl font-bold text-blue-800 mb-2">Plant Fossils</h2>
+                    <p class="text-gray-600">Learn about ancient fern-like trees found in places that are now widely separated.</p>
+                </a>
+                <a href="#" onclick="showTopic('glacial-evidence')"
+                    class="topic-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-2 border-blue-200">
+                    <h2 class="text-2xl font-bold text-blue-800 mb-2">Glacial Evidence</h2>
+                    <p class="text-gray-600">See how evidence of ancient glaciers supports the idea that continents once were joined.</p>
+                </a>
+                <a href="#" onclick="showTopic('antarctic-climate')"
+                    class="topic-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-2 border-blue-200">
+                    <h2 class="text-2xl font-bold text-blue-800 mb-2">Antarctic Climate</h2>
+                    <p class="text-gray-600">Find out how the frozen continent of Antarctica was once home to lush plant life.</p>
+                </a>
+                <a href="#" onclick="showTopic('corresponding-rocks')"
+                    class="topic-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-2 border-blue-200">
+                    <h2 class="text-2xl font-bold text-blue-800 mb-2">Corresponding Rock Sequences</h2>
+                    <p class="text-gray-600">Discover how similar rock formations across continents provide compelling evidence for a shared history.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Topic Pages Container -->
+    <div id="topic-pages" class="w-full h-full p-4 md:p-8">
+
+        <!-- Fit of Continents Page -->
+        <div id="fit-of-continents" class="page-content">
+            <button onclick="goHome()"
+                class="text-blue-600 hover:text-blue-800 mb-4 transition-colors duration-200 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+                Back to Topics
+            </button>
+            <h1 class="text-3xl font-bold text-blue-900 mb-4">Fit of Continents</h1>
+            <div id="text-container-fit-of-continents" class="text-gray-800 text-lg leading-relaxed">
+                <p class="mb-4">Three hundred years ago, a man named Abraham Ortelium noticed that maps of the world showed continents that seemed like they would fit together like a puzzle. Specifically, the continents of South America and Africa look like they fit together. North America could also fit snuggly into the bulge of northwest Africa. Have you ever noticed this?</p>
+                <img src="https://raw.githubusercontent.com/mrjpalmer/Activity-2.1-Research-Project/main/fit.jpg"
+                    alt="A map of the supercontinent Pangea with modern continents highlighted"
+                    class="rounded-lg shadow-md my-6 w-full h-auto">
+                <p class="mb-4">It was not until the 1900s that scientists began to consider this apparent phenomenon seriously. What could explain why the continents that are obviously separated by an ocean seem to fit together like a puzzle?</p>
+                <p class="mb-4">Alfred Wegener put forth the claim that they look like they fit together because they once were together. In other words, Wegener thought that in Earth’s distant past, South America was touching Africa and there was no ocean between them. But what evidence did he have for this claim? He had very little in the early 1900s. Wegener therefore devoted his career and life to proving that these continents used to be one. What data did he find? He found quite a bit, and shortly you will hear about these phenomena from other groups in your class.</p>
+                <p class="mb-4">What conclusions can you draw from this single piece of information about the puzzlelike fit of the continents? What more do you want to know? Answer the questions on Activity 2.1.</p>
+            </div>
+            <div class="mt-6 flex items-center justify-between">
+                <div>
+                    <button onclick="changeFontSize(-1)"
+                        class="p-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-200">A-</button>
+                    <button onclick="changeFontSize(1)"
+                        class="p-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-200 ml-2">A+</button>
+                </div>
+                <button onclick="undoHighlight()" id="undo-button-fit-of-continents"
+                    class="px-4 py-2 rounded-lg bg-red-500 text-white hover:bg-red-600 transition-colors duration-200 hidden">Undo
+                    Highlight</button>
+            </div>
+        </div>
+
+        <!-- Animal Fossils Page -->
+        <div id="animal-fossils" class="page-content">
+            <button onclick="goHome()"
+                class="text-blue-600 hover:text-blue-800 mb-4 transition-colors duration-200 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+                Back to Topics
+            </button>
+            <h1 class="text-3xl font-bold text-blue-900 mb-4">Animal Fossils</h1>
+            <div id="text-container-animal-fossils" class="text-gray-800 text-lg leading-relaxed">
+                <p class="mb-4">The Mesosaurus is an extinct reptile similar to a lizard. Scientists think this animal lived around 265 million years ago. Fossil evidence tells us that the Mesosaurus was approximately 3 feet long. The Mesosaurus’ fingers and toes were webbed, so they looked more like paddles than hands and feet. These powerful paddles were useful for chasing fish and other aquatic animals. One unique feature of this reptile is that it lived on land but returned to freshwater (lakes and rivers) to hunt its prey. The Mesosaurus was an ancestor to present-day amphibians. Since the Mesosaurus would breathe through nostrils on the top of its skull, scientists think it fed on prey similar to the way a crocodile feeds.</p>
+                <div class="flex flex-col md:flex-row justify-around items-center space-y-4 md:space-y-0 md:space-x-4 my-6">
+                    <img src="https://raw.githubusercontent.com/mrjpalmer/Activity-2.1-Research-Project/main/Mes.jpg"
+                        alt="A drawing of a Mesosaurus" class="rounded-lg shadow-md w-full md:w-1/2 h-auto object-contain">
+                    <img src="https://raw.githubusercontent.com/mrjpalmer/Activity-2.1-Research-Project/main/Lys.jpg"
+                        alt="A drawing of a Lystrosaurus" class="rounded-lg shadow-md w-full md:w-1/2 h-auto object-contain">
+                </div>
+                <p class="mb-4">During the 1800s, scientists discovered fossils of the Mesosaurus in only two regions, South America and parts of southern Africa. This is interesting to scientists because these two regions are separated by the voluminous Atlantic Ocean. How do you think the Mesosaurus fossils could have ended up in these two places? Scientists who study these fossils know that they could not have swum across the vast ocean!</p>
+                <p class="mb-4">Paleontologists (scientists who study fossils) have also found evidence of another animal that lived 250 million years ago. This animal is known as the Lystrosaurus. The Lystrosaurus was a large lizard about the size of a pig. It lived on land and, similar to the Mesosaurus, has only been found in certain places on Earth. According to paleontologists, these reptiles lived in Africa, India, and Antarctica. Can you imagine a reptile living in cold and icy Antarctica?</p>
+                <p class="mb-4">What conclusions can you draw from this single piece of information about animal fossils? What more do you want to know? Answer the questions on Activity 2.1.</p>
+            </div>
+            <div class="mt-6 flex items-center justify-between">
+                <div>
+                    <button onclick="changeFontSize(-1)"
+                        class="p-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-200">A-</button>
+                    <button onclick="changeFontSize(1)"
+                        class="p-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-200 ml-2">A+</button>
+                </div>
+                <button onclick="undoHighlight()" id="undo-button-animal-fossils"
+                    class="px-4 py-2 rounded-lg bg-red-500 text-white hover:bg-red-600 transition-colors duration-200 hidden">Undo
+                    Highlight</button>
+            </div>
+        </div>
+
+        <!-- Plant Fossils Page -->
+        <div id="plant-fossils" class="page-content">
+            <button onclick="goHome()"
+                class="text-blue-600 hover:text-blue-800 mb-4 transition-colors duration-200 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+                Back to Topics
+            </button>
+            <h1 class="text-3xl font-bold text-blue-900 mb-4">Plant Fossils</h1>
+            <div id="text-container-plant-fossils" class="text-gray-800 text-lg leading-relaxed">
+                <p class="mb-4">Eduard Suess was an Austrian geologist and expert in studying the Alps. In 1824, he found fossils of a fernlike tree. Scientists think that the plants that fossilized were living on Earth about 290 million years ago. Suess called the tree Glossopteris because glossa in Greek means “tongue.” He used this word because the tree grew to be approximately 3.5 meters (12 feet) tall and had thick, fleshy tongue-like leaves. More than 70 species of fossils related to Glossopteris have been discovered. These trees are deciduous, meaning they lose their leaves during cool seasons.</p>
+                <img src="https://raw.githubusercontent.com/mrjpalmer/Activity-2.1-Research-Project/main/plant.jpg"
+                    alt="A photo of a Glossopteris fossil" class="rounded-lg shadow-md my-6 w-full h-auto">
+                <p class="mb-4">These plant fossils have been found in certain locations on Earth’s continents, mainly in South America, India, Africa, Australia, Antarctica, and Madagascar. It is thought that the climate where these trees once thrived was relatively temperate.</p>
+                <p class="mb-4">What conclusions can you draw from this single piece of information about plant fossils? What more do you want to know? Answer the questions on Activity 2.1.</p>
+            </div>
+            <div class="mt-6 flex items-center justify-between">
+                <div>
+                    <button onclick="changeFontSize(-1)"
+                        class="p-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-200">A-</button>
+                    <button onclick="changeFontSize(1)"
+                        class="p-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-200 ml-2">A+</button>
+                </div>
+                <button onclick="undoHighlight()" id="undo-button-plant-fossils"
+                    class="px-4 py-2 rounded-lg bg-red-500 text-white hover:bg-red-600 transition-colors duration-200 hidden">Undo
+                    Highlight</button>
+            </div>
+        </div>
+
+        <!-- Glacial Evidence Page -->
+        <div id="glacial-evidence" class="page-content">
+            <button onclick="goHome()"
+                class="text-blue-600 hover:text-blue-800 mb-4 transition-colors duration-200 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+                Back to Topics
+            </button>
+            <h1 class="text-3xl font-bold text-blue-900 mb-4">Glacial Evidence</h1>
+            <div id="text-container-glacial-evidence" class="text-gray-800 text-lg leading-relaxed">
+                <p class="mb-4">A glacier is a large, slow-moving, solid body of ice. Glacial ice can be very thick and extremely heavy. As the ice flows downslope, it causes friction along the bottom where the ice meets the underlying rocky surface. This friction crushes, scrapes, and moves rocks, similar to a river, causing the underlying rock to become weathered and eroded. This can even cause large, wide valleys to be carved. A glacier moves less than 1.6 kilometers per year, whereas water in a river might move along at 8 kilometers per hour.</p>
+                <img src="https://raw.githubusercontent.com/mrjpalmer/Activity-2.1-Research-Project/main/Glacial.jpeg"
+                    alt="A photo of glacial striations on rock" class="rounded-lg shadow-md my-6 w-full h-auto">
+                <p class="mb-4">After the ice melts, scientists can determine the direction the ice was moving by looking at the deep grooves in the rocks, called striations. During very cold periods on Earth, like the most recent ice age about 10,000 years ago, ice covers very large parts of the Earth. This ice can be more than 1.6 kilometers thick in many places.</p>
+                <p class="mb-4">When scientists, including Wegener, looked at the locations on Earth where evidence of glaciers could be found, they discovered that about 300 million years ago much of North America was covered in a very thick sheet of ice, as were parts of South America, southern Africa, India, and southern Australia. How could places that are very arid now, such as Africa, have once been covered with ice?</p>
+                <p class="mb-4">What conclusions can you draw from this single piece of information about glacial evidence? What more do you want to know? Answer the questions on Activity 2.1.</p>
+            </div>
+            <div class="mt-6 flex items-center justify-between">
+                <div>
+                    <button onclick="changeFontSize(-1)"
+                        class="p-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-200">A-</button>
+                    <button onclick="changeFontSize(1)"
+                        class="p-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-200 ml-2">A+</button>
+                </div>
+                <button onclick="undoHighlight()" id="undo-button-glacial-evidence"
+                    class="px-4 py-2 rounded-lg bg-red-500 text-white hover:bg-red-600 transition-colors duration-200 hidden">Undo
+                    Highlight</button>
+            </div>
+        </div>
+
+        <!-- Antarctic Climate Changes Page -->
+        <div id="antarctic-climate" class="page-content">
+            <button onclick="goHome()"
+                class="text-blue-600 hover:text-blue-800 mb-4 transition-colors duration-200 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+                Back to Topics
+            </button>
+            <h1 class="text-3xl font-bold text-blue-900 mb-4">Antarctic Climate Changes</h1>
+            <div id="text-container-antarctic-climate" class="text-gray-800 text-lg leading-relaxed">
+                <p class="mb-4">It is well known that Antarctica, the continent at the south pole of the Earth, is an extremely cold and relatively inhospitable place. This means that currently it is uncommon for many forms of life to be found there. There is evidence, however, that this was not always the case.</p>
+                <img src="https://raw.githubusercontent.com/mrjpalmer/Activity-2.1-Research-Project/main/Anarctic.jpg"
+                    alt="A photo of a mummified seal in Antarctica"
+                    class="rounded-lg shadow-md my-6 w-full h-auto">
+                <p class="mb-4">Geologists know that coal forms from decomposed plant matter subjected to certain conditions that form rock. Therefore, plants are necessary for the formation of coal. Scientists were surprised when coal was discovered in Antarctica, where plants are not commonly found. The swampy areas most often associated with the types of plants that turn into coal are not currently found on the Antarctic continent. Other evidence of past life (fossils) has also been found on Antarctica. Paleontologists do not believe that these animals that were apparently in Antarctica could have survived in the climate as it is today. This leads scientists to believe that in the past, Antarctica must have had a much warmer climate than it does today.</p>
+                <p class="mb-4">How could the climate of Antarctica have changed so drastically from a place that was hospitable to various life forms to one in which few species can survive?</p>
+                <p class="mb-4">What conclusions can you draw from this single piece of information about the climate of Antarctica? What more do you want to know? Answer the questions on Activity 2.1.</p>
+            </div>
+            <div class="mt-6 flex items-center justify-between">
+                <div>
+                    <button onclick="changeFontSize(-1)"
+                        class="p-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-200">A-</button>
+                    <button onclick="changeFontSize(1)"
+                        class="p-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-200 ml-2">A+</button>
+                </div>
+                <button onclick="undoHighlight()" id="undo-button-antarctic-climate"
+                    class="px-4 py-2 rounded-lg bg-red-500 text-white hover:bg-red-600 transition-colors duration-200 hidden">Undo
+                    Highlight</button>
+            </div>
+        </div>
+
+        <!-- Corresponding Rock Sequences Page -->
+        <div id="corresponding-rocks" class="page-content">
+            <button onclick="goHome()"
+                class="text-blue-600 hover:text-blue-800 mb-4 transition-colors duration-200 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+                Back to Topics
+            </button>
+            <h1 class="text-3xl font-bold text-blue-900 mb-4">Corresponding Rock Sequences</h1>
+            <div id="text-container-corresponding-rocks" class="text-gray-800 text-lg leading-relaxed">
+                <p class="mb-4">Wegener noticed that South America and Africa appear to fit together like a puzzle. If the Atlantic Ocean were not in the middle, these continents could nestle together. Not only did the coastlines appear to fit together—an analysis of the types and sequences of rocks along each of the coasts of these two continents revealed striking similarities. For example, imagine that the layers of rock on the South American continent were (from oldest to youngest) basalt, limestone, coal, shale. Scientists were surprised to discover the exact same sequence along the African coastline.</p>
+                <img src="https://raw.githubusercontent.com/mrjpalmer/Activity-2.1-Research-Project/main/rock.jpg"
+                    alt="A diagram showing corresponding rock sequences and fossil evidence on different continents"
+                    class="rounded-lg shadow-md my-6 w-full h-auto">
+                <p class="mb-4">How could two places, so far apart and divided by an ocean, have the same rock sequences?</p>
+                <p class="mb-4">What conclusions can you draw from this single piece of information about the pattern of rock sequence on different continents? What more do you want to know? Answer the questions on Activity 2.1.</p>
+            </div>
+            <div class="mt-6 flex items-center justify-between">
+                <div>
+                    <button onclick="changeFontSize(-1)"
+                        class="p-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-200">A-</button>
+                    <button onclick="changeFontSize(1)"
+                        class="p-2 rounded-full bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-200 ml-2">A+</button>
+                </div>
+                <button onclick="undoHighlight()" id="undo-button-corresponding-rocks"
+                    class="px-4 py-2 rounded-lg bg-red-500 text-white hover:bg-red-600 transition-colors duration-200 hidden">Undo
+                    Highlight</button>
+            </div>
+            </div>
+        </div>
+
+    <script>
+        let currentTopic = '';
+
+        // --- Document state functions ---
+        function saveState(key, data) {
+            try {
+                localStorage.setItem(key, JSON.stringify(data));
+            } catch (e) {
+                console.error(`Error saving to localStorage for key '${key}':`, e);
+            }
+        }
+
+        function loadState(key) {
+            try {
+                const data = localStorage.getItem(key);
+                return data ? JSON.parse(data) : null;
+            } catch (e) {
+                console.error(`Error loading from localStorage for key '${key}':`, e);
+                return null;
+            }
+        }
+
+        // --- View & Navigation functions ---
+        function showTopic(topicId) {
+            document.getElementById('home-page').style.display = 'none';
+            document.getElementById('topic-pages').style.display = 'block';
+            document.querySelectorAll('#topic-pages > div').forEach(page => page.style.display = 'none');
+            document.getElementById(topicId).style.display = 'block';
+            currentTopic = topicId;
+            applySavedState();
+        }
+
+        function goHome() {
+            document.getElementById('home-page').style.display = 'block';
+            document.getElementById('topic-pages').style.display = 'none';
+            currentTopic = '';
+        }
+
+        function applySavedState() {
+            // Apply highlights
+            const highlightsData = loadState('highlights') || {};
+            applyHighlights(currentTopic, highlightsData);
+
+            // Apply font size
+            const fontSize = loadState('fontSize') || 0;
+            applyTextSize(fontSize);
+        }
+
+        // --- Highlighting functions ---
+        function applyHighlights(topicId, highlightsData) {
+            const textContainer = document.getElementById(`text-container-${topicId}`);
+            if (!textContainer) return;
+
+            // First, remove all existing highlights
+            const highlightedSpans = textContainer.querySelectorAll('.highlighted');
+            highlightedSpans.forEach(span => {
+                const parent = span.parentNode;
+                if (parent) {
+                    while (span.firstChild) {
+                        parent.insertBefore(span.firstChild, span);
+                    }
+                    parent.removeChild(span);
+                }
+            });
+
+            const topicHighlights = highlightsData[topicId] || [];
+
+            // Reapply highlights based on the stored data
+            topicHighlights.forEach(h => {
+                const text = h.text;
+                const innerHTML = textContainer.innerHTML;
+                const escapedText = text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                const regex = new RegExp(`(?![^<]*>)${escapedText}(?![^<]*<\\/a>)`, 'g');
+                
+                if (innerHTML.includes(text) && !innerHTML.includes(`<span class="highlighted">${text}</span>`)) {
+                    textContainer.innerHTML = innerHTML.replace(regex, `<span class="highlighted">${text}</span>`);
+                }
+            });
+
+            const undoButton = document.getElementById(`undo-button-${currentTopic}`);
+            if (undoButton) {
+                if (topicHighlights.length > 0) {
+                    undoButton.classList.remove('hidden');
+                } else {
+                    undoButton.classList.add('hidden');
+                }
+            }
+        }
+
+
+        function getSelectionText() {
+            let text = "";
+            if (window.getSelection) {
+                text = window.getSelection().toString();
+            } else if (document.selection && document.selection.type != "Control") {
+                text = document.selection.createRange().text;
+            }
+            return text;
+        }
+
+        function handleSelection() {
+            const selectedText = getSelectionText().trim();
+            if (selectedText.length > 0) {
+                const textContainer = document.getElementById(`text-container-${currentTopic}`);
+                const selection = window.getSelection();
+                if (textContainer && selection.containsNode(textContainer, true)) {
+                    let highlightsData = loadState('highlights') || {};
+                    if (!highlightsData[currentTopic]) {
+                        highlightsData[currentTopic] = [];
+                    }
+                    const newHighlight = {
+                        text: selectedText,
+                        date: new Date().toISOString()
+                    };
+                    highlightsData[currentTopic].push(newHighlight);
+                    saveState('highlights', highlightsData);
+                    applyHighlights(currentTopic, highlightsData);
+                }
+            }
+        }
+        document.addEventListener('mouseup', handleSelection);
+
+        window.undoHighlight = function() {
+            let highlightsData = loadState('highlights') || {};
+            if (highlightsData[currentTopic] && highlightsData[currentTopic].length > 0) {
+                highlightsData[currentTopic].pop();
+                saveState('highlights', highlightsData);
+                applyHighlights(currentTopic, highlightsData);
+            }
+        };
+
+        // --- Text size functions ---
+        function applyTextSize(size) {
+            document.querySelectorAll('.text-lg').forEach(el => {
+                el.style.fontSize = `${1.125 + (size || 0) * 0.125}rem`;
+            });
+        }
+
+        window.changeFontSize = function(delta) {
+            let size = loadState('fontSize') || 0;
+            size += delta;
+            saveState('fontSize', size);
+            applyTextSize(size);
+        }
+
+        // Initialize on page load
+        window.onload = function() {
+            applySavedState();
+        }
+
+        // Expose functions to the window so they can be called from onclick attributes
+        window.showTopic = showTopic;
+        window.goHome = goHome;
+    </script>
+</body>
+
+</html>
